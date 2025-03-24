@@ -1,0 +1,19 @@
+
+
+.home img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.home p {
+  padding: 30px 0;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 460px) {
+  .home p {
+    width: inherit;
+  }
+}

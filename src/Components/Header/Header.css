@@ -1,0 +1,46 @@
+header {
+  height: 50px;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+header > nav > ul > li:hover {
+  font-weight: 700;
+}
+
+header button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+@media (max-width: 768px) {
+  header > nav > ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  header {
+    height: inherit;
+  }
+
+  header button {
+    position: static;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
